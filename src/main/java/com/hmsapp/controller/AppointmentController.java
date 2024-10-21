@@ -30,6 +30,7 @@ public class AppointmentController {
 	}
 	@DeleteMapping("/deleteAppointment/{id}")
 	public void deleteAppointment(@PathVariable long id) {
+		System.out.println("Tyr to delete with this id"+id);
 		appointmentRepository.deleteById(id);
 		
 	}
