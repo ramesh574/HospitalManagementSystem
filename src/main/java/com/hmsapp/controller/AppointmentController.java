@@ -21,6 +21,7 @@ public class AppointmentController {
 	@Autowired
 	private AppointmentRepository appointmentRepository;
 	@PostMapping("/takeAppointment")
+	System.out.println("This is comment");
 	public Appointment takeAppointment(@RequestBody Appointment appointment) {
 		return appointmentRepository.save(appointment);
 	}
