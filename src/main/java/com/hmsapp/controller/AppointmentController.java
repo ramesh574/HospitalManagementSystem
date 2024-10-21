@@ -23,6 +23,7 @@ public class AppointmentController {
 	@PostMapping("/takeAppointment")
 	System.out.println("This is comment1");
 	System.out.println("This is comment2");
+	Sysout.out.println("This is 3rd comment");
 	public Appointment takeAppointment(@RequestBody Appointment appointment) {
 		return appointmentRepository.save(appointment);
 	}
